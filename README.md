@@ -25,3 +25,17 @@ const john = {
     return this.bmi;
   },
 };
+
+mark.calcBMI();
+john.calcBMI();
+console.log(mark.bmi, john.bmi);
+("John's BMI (28.3) is higher than Mark's (23.9)!");
+if (mark.bmi > john.bmi) {
+  console.log(
+    `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})`
+  );
+} else if (john.bmi > mark.bmi) {
+  console.log(
+    `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})`
+  );
+}
